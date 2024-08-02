@@ -70,6 +70,7 @@
                                     <button class="btn btn-info mb-1">
     <a href="{{ route('clientes.receta', $venta->cliente->id) }}" class="text-white text-decoration-none">Ver Receta</a>
 </button>
+
                                 </td>
                             </tr>
                         @endforeach
