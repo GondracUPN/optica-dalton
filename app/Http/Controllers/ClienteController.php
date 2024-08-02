@@ -78,7 +78,7 @@ class ClienteController extends Controller
     {
         return view('clientes.receta', compact('cliente'));
     }
-   // En app/Http/Controllers/ClienteController.php
+   // Enapp/Http/Controllers/ClienteController.php
 public function receta($id)
 {
     $cliente = Cliente::findOrFail($id);
