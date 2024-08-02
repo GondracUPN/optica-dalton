@@ -78,25 +78,14 @@ class ClienteController extends Controller
     {
         return view('clientes.receta', compact('cliente'));
     }
-   // En app/Http/Controllers/ClienteController.php
+   // Enapp/Http/Controllers/ClienteController.php
 public function receta($id)
 {
     $cliente = Cliente::findOrFail($id);
 
-    return response()->json([
-        'od_lejos_esfera' => $cliente->od_lejos_esfera,
-        'od_lejos_cilindro' => $cliente->od_lejos_cilindro,
-        'od_lejos_eje' => $cliente->od_lejos_eje,
-        'oi_lejos_esfera' => $cliente->oi_lejos_esfera,
-        'oi_lejos_cilindro' => $cliente->oi_lejos_cilindro,
-        'oi_lejos_eje' => $cliente->oi_lejos_eje,
-        'dip_lejos' => $cliente->dip_lejos,
-        'od_cerca_add' => $cliente->od_cerca_add,
-        'oi_cerca_add' => $cliente->oi_cerca_add,
-        'dip_cerca' => $cliente->dip_cerca,
-    ]);
-    
+    return view('clientes.receta', compact('cliente'));
 }
+
 
     
 
